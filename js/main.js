@@ -21,18 +21,18 @@ btnProgramar.addEventListener("click", function(){
 	valorAtual = parseInt(valorAtual,10);
 	valorAtual = valorAtual + valorClick;
 	dinheiro.textContent = valorAtual.toFixed(2);
+	salvaDinheiro();
 
 });
 
-setCookie(money, dinheiro.textContent);
+function salvaDinheiro(){
+	
+// Store
+localStorage.money = dinheiro.textContent;
+// Retrieve
+dinheiro.textContent = localStorage.money;
 
-function setCookie(name, value) {
-        var cookie = name + "=" + escape(value);
- 
-        document.cookie = cookie;
 }
-
-
 
 
 
