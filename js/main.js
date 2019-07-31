@@ -27,8 +27,12 @@ btnProgramar.addEventListener("click", function(){
 
 function salvaDinheiro(){
 	
-localStorage.money = document.querySelector("#dinheiro").textContent;
-document.getElementById("dinheiro").innerHTML = localStorage.money;
+if (typeof(Storage) !== "undefined") {
+  	localStorage.money = document.querySelector("#dinheiro").textContent;
+	document.getElementById("dinheiro").innerHTML = localStorage.money;
+} else {
+  	document.getElementById("dinheiro").innerHTML = "erro 404";
+}
 
 }
 
