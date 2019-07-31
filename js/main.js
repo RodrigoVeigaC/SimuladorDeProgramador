@@ -16,21 +16,19 @@ var valorClick = 1;
 
 var btnProgramar = document.querySelector("#btnProgramar");
 btnProgramar.addEventListener("click", function(){
-
+	
+	salvaDinheiro();
 	var valorAtual = dinheiro.textContent;
 	valorAtual = parseInt(valorAtual,10);
 	valorAtual = valorAtual + valorClick;
 	dinheiro.textContent = valorAtual.toFixed(2);
-	salvaDinheiro();
 
 });
 
 function salvaDinheiro(){
 	
-// Store
-localStorage.money = dinheiro.textContent;
-// Retrieve
-dinheiro.textContent = localStorage.money;
+localStorage.money = document.querySelector("#dinheiro").textContent;
+document.getElementById("dinheiro").innerHTML = localStorage.money;
 
 }
 
