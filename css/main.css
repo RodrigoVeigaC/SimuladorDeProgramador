@@ -7,8 +7,8 @@ body{
 }
 
 .jogo{
-	height: 500px;
-	width: 900px;
+	height: 300px;
+	width: 600px;
 	margin: auto;
 	margin-top: 30px;
 	background-color: #cccc;
@@ -16,7 +16,7 @@ body{
 }
 
 #loja{
-	height: 500px;
+	height: 300px;
 	width: 20%;
 	background-color: #fff;
 	float: left;
@@ -28,7 +28,7 @@ body{
 
 #computador{
 	float: right;
-	height: 470px;
+	height: 270px;
 	width: 80%;
 	background-color: #ccc;
 	z-index: 2;
