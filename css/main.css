@@ -1,0 +1,62 @@
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background:url(img/fundo.jpg);
+}
+
+.jogo{
+	height: 500px;
+	width: 900px;
+	margin: auto;
+	margin-top: 30px;
+	background-color: #cccc;
+	box-sizing: border-box;
+}
+
+#loja{
+	height: 500px;
+	width: 20%;
+	background-color: #fff;
+	float: left;
+	z-index: 2;
+	text-align: center;
+	font-family: arial;
+	overflow:auto;
+}
+
+#computador{
+	float: right;
+	height: 470px;
+	width: 80%;
+	background-color: #ccc;
+	z-index: 2;
+	text-align: center;
+	font-family: arial;
+}
+
+#carteira{
+	top: 0;
+	float: right;
+	height: 30px;
+	width: 80%;
+	background-color: #ccc;
+	z-index: 2;
+	font-size: 30px;
+	border: none;
+}
+
+#btnProgramar{
+	height: 100px;
+	width: 60%;
+	background-color: #fff;
+	border-radius: 10px;
+	border: 5px solid #000;
+	font-size: 50px;
+
+}
+
+#dinheiro{
+	text-align: justify;
+}
