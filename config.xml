@@ -19,6 +19,7 @@
     <icon src="icon.png" />
 
 	<preference name="orientation" value="landscape" />
+	<preference name="KeepRunning" value="true"/>
 	<platform name="android" />
 	
 </widget>
